@@ -10,16 +10,6 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ConvertFromDecimalToRomanTest {
-
-    @Test
-    void shouldConvertDecimalToRomanNumber() {
-       int decimal = 2222;
-       ConvertFromDecimalToRoman converter = new ConvertFromDecimalToRoman();
-       String roman = converter.convert(decimal);
-       System.out.println(roman);
-
-    }
-
     @DisplayName("Should convert decimal number to roman number")
     @ParameterizedTest(name = "{index} => roman={0}, decimal={1}")
     @CsvSource({
